@@ -1,0 +1,125 @@
+---
+layout: default
+---
+
+<div class="container-fluid single">
+    <div class="row">
+
+        <div class="col-md-12 article">
+            <div class="thumb">
+                {% if site.data.thumbnail[page.thumbnail] %}
+                    <img src="{{ site.data.thumbnail[page.thumbnail] }}" alt="Thumbnail: {{ page.thumbnail }}" />
+                {% elsif page.thumbnail %}
+                    <i class="fa fa-{{ page.thumbnail }} fa-4x"></i>
+                {% endif %}
+            </div>
+
+            <h1 class="header">{{ page.title }}</h1>
+
+            <div class="author">
+                <small>
+                    <i>
+                        {% if page.author %}
+                            by
+                            <span class="name">{{ page.author }}</span>
+                        {% endif %}
+
+                        {% if page.date %}
+                            on {{ page.date | date:"%B %-d, %Y" }}
+                        {% endif %}
+
+                        {% if page.categories %}
+                            under
+                            {% for category in page.categories limit:1 %}
+                                {{ category }}
+                            {% endfor %}
+                        {% endif %}
+                    </i>
+                </small>
+            </div>
+
+            <div class="content-panel content">
+                {% if page.series %}
+                    This post is part of the series "{{ page.series }}":
+                    <ol class="series">
+                        {% for item in site.posts reversed %}
+                            {% if page.series == item.series %}
+                                <li>
+                                    {% if page.title == item.title %}
+                                        {% assign nextpost = true %}
+                                        {{ item.title }}
+                                    {% else %}
+                                        {% if nextpost == true %}
+                                            {% assign seriesnext = item %}
+                                        {% endif %}
+                                        {% assign nextpost = false %}
+                                        <a href="{{ item.url }}">{{ item.title }}</a>
+                                    {% endif %}
+                                </li>
+                            {% endif %}
+                        {% endfor %}
+                    </ol>
+                {% endif %}
+
+                <span class="body">{{ content }}</span>
+
+                {% if page.series %}
+                    {% if seriesnext %}
+                        <i>Read the next post in the series:</i> <a href="{{ seriesnext.url }}">{{ seriesnext.title }}</a>
+                    {% endif %}
+                {% endif %}
+
+                {% if page.tags and page.tags.size > 0 %}
+                    <div class="tags">
+                        <small>
+                            <i class="fa fa-tags"></i>
+                            {{ page.tags | join: ', ' }}
+                        </small>
+                    </div>
+                {% endif %}
+
+                {% if site.related_posts.length > 0 %}
+                    <div class="content-panel related clearfix">
+
+                        {% for post in site.related_posts limit:1 %}
+                            <div class="related-header">
+                                <a href="{{ post.url }}">Read More</a>
+                            </div>
+                            <div class="title">
+                                <a href="{{ post.url }}">{{ post.title }}</a>
+                            </div>
+                            <div class="excerpt">
+                                {% if post.summary %}
+                                    {{ post.summary | strip_html | truncatewords:30 }}
+                                {% else %}
+                                    {{ post.excerpt | strip_html | truncatewords:30 }}
+                                {% endif %}
+                                <a href="{{ post.url }}">Continue Reading</a>
+                            </div>
+                        {% endfor %}
+                        <hr/>
+
+                        {% if page.previous %}
+                            <div class="previous-next previous">
+                                <p>
+                                    <a href="{{ page.previous.url }}">{{ page.previous.title }}</a>
+                                </p>
+                                <p class="date">Published {{ page.previous.date | date: "%B %-d, %Y" }}</p>
+                            </div>
+                        {% endif %}
+
+                        {% if page.next %}
+                            <div class="previous-next next">
+                                <p>
+                                    <a href="{{ page.next.url }}">{{ page.next.title }}</a>
+                                </p>
+                                <p class="date">Published {{ page.next.date | date: "%B %-d, %Y" }}</p>
+                            </div>
+                        {% endif %}
+
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

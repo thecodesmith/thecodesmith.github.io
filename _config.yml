@@ -1,13 +1,19 @@
-title: The Codesmith's Journal
-email: brian@thecodesmith.com
+title: Brian C. Stewart
 description: >
-  This is the technical journal for the codesmith, Brian Stewart.
-  Topics include software craftsmanship, clean code, domain-specific
-  languages (DSLs) and human-friendly tools, among others.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://thecodesmith.com" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: thecodesmith
-github_username:  thecodesmith
+  Lorem ipsum dolor sit amet, vix ea alii definitionem, duis adhuc vitae sea ea, usu imperdiet tincidunt ne. Cu ullum partem est, vel ut autem recusabo. Vitae possit quo ne, labores legimus postulant an duo, eos melius persecuti ex.
+
+url: "http://thecodesmith.com"
+source_url: "https://github.com/thecodesmith/thecodesmith.github.io"
+
+email: brian@thecodesmith.com
+linkedin_username:      thecodesmith
+github_username:        thecodesmith
+stackoverflow_username: thecodesmith
+twitter_username:       thecodesmith_
+
+title_image: images/brian_stewart.jpg
+
+post_limit: 5
 
 # Build settings
 markdown: kramdown
