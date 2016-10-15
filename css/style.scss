@@ -217,7 +217,7 @@ ul {
         font-family: 'Montserrat', sans-serif;
         color: $brand-light;
         margin-top: 0px;
-        padding-top: 15px;
+        padding-top: 20px;
         font-size: 30px;
 
         @media (min-width: $screen-sm-min) {
@@ -228,11 +228,21 @@ ul {
         @media (min-width: $screen-md-min) {
             font-size: 60px;
             margin-top: -20px;
+            padding-top: 40px;
         }
     }
 
     .author-title {
         color: $light-medium;
+        font-size: 1.5em;
+
+        @media (min-width: $screen-sm-min) {
+            font-size: 1.8em;
+        }
+
+        @media (min-width: $screen-md-min) {
+            font-size: 2.0em;
+        }
     }
 
     .row {
@@ -763,7 +773,7 @@ ul {
 }
 
 .footer {
-    width: 100%;
+    // width: 100%;
     margin-left: 0%;
 
     .fa-heart {
