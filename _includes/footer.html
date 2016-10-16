@@ -1,4 +1,4 @@
-<div class="footer clearfix">
+<div class="container-fluid footer clearfix">
     <div class="col-md-5 footer-left">
         Crafted with <i class="fa fa-heart"></i> by <a href="/about">Brian Stewart</a>
     </div>
@@ -6,13 +6,13 @@
         Built with <a href="http://jekyllrb.com">Jekyll</a>,
         powered by <a href="http://pages.github.com">GitHub Pages</a> <i class="fa fa-github"></i>
     </div>
-    <div class="col-md-12">
+    <div class="col-md-12 links">
         <a href="/">Home</a> |
         <a href="/about">About</a> |
         <a href="/posts">Posts</a>
     </div>
-    <div class="col-md-12">
-        &copy; 2016-{{ 'now' | date: "%Y" }} Brian Stewart
+    <div class="col-md-12 copyright">
+        {% include copyright.html %}
     </div>
 </div>
 

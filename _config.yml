@@ -1,9 +1,11 @@
-title: Brian C. Stewart
+title: "Brian Stewart | The Codesmith"
+author: "Brian C. Stewart"
 description: >
   Lorem ipsum dolor sit amet, vix ea alii definitionem, duis adhuc vitae sea ea, usu imperdiet tincidunt ne. Cu ullum partem est, vel ut autem recusabo. Vitae possit quo ne, labores legimus postulant an duo, eos melius persecuti ex.
 
 url: "http://thecodesmith.com"
 source_url: "https://github.com/thecodesmith/thecodesmith.github.io"
+permalink: /:year/:month/:day/:title/
 
 email: brian@thecodesmith.com
 linkedin_username:      thecodesmith
