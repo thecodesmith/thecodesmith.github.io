@@ -27,13 +27,6 @@ layout: default
                         {% if page.date %}
                             on {{ page.date | date:"%B %-d, %Y" }}
                         {% endif %}
-
-                        {% if page.categories %}
-                            under
-                            {% for category in page.categories limit:1 %}
-                                {{ category }}
-                            {% endfor %}
-                        {% endif %}
                     </i>
                 </small>
             </div>
