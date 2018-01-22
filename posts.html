@@ -1,0 +1,28 @@
+---
+layout: default
+title: Posts
+permalink: /posts.html
+---
+
+<div class="container-fluid index">
+    <div class="row">
+        <div class="col-md-12 content-panel posts">
+            <h1 class="header author-header">Posts</h1>
+
+            {% for post in site.posts %}
+                <div class="title">
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                </div>
+                <div class="excerpt">
+                     {% if post.summary %}
+                        {{ post.summary | strip_html | truncatewords:30 }}
+                     {% else %}
+                        {{ post.excerpt | strip_html | truncatewords:30 }}
+                     {% endif %}
+                    <a href="{{ post.url }}">Continue Reading</a>
+                </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</div>

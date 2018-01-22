@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+
+    <body>
+        <div class="container">
+            <div class="wrap">
+                <div class="container-fluid index">
+                    <div class="row">
+                    <div class="col-md-12 main content-panel">
+                        <div class="gravatar">
+                            <img src="/{{ site.title_image }}" class="img-circle about-image" height="150" width="150" alt="{{ site.title }}" />
+                        </div>
+
+                        <h1 class="header author-header">{{ site.author }}</h1>
+                        <h2 class="header author-title"><i>{{ site.author_title }}</i></h2>
+
+                        <div class="author-text">
+                            {{ content }}
+                        </div>
+
+                        {% include social_links.html %}
+                    </div>
+                </div>
+            </div>
+            {% include footer.html %}
+        </div>
+    </body>
+</html>
