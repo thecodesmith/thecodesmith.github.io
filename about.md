@@ -13,14 +13,14 @@ My journey to the present day is a winding one, but here I am.
 ### I love building
 
 My love of craftsmanship showed itself early.
-For my fifth birthday, I received a bucket of Legos.
+For my fifth birthday, I was given a bucket of Legos.
 After that, I don't much remember playing with other toys.
 I wanted to be a "Lego Designer" when I grew up.
 I kinda still do.
 
 ### I love learning
 
-Around twelve years old I was given a model rocket kit.
+Around twelve years old I got a model rocket kit.
 After a few flights, an idea started taking shape:
 Could I angle the rocket into the wind so it would land back where it was launched?
 To make the calculations, I taught myself physics, trigonometry, spreadsheets.
