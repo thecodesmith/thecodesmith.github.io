@@ -20,7 +20,7 @@ I kinda still do.
 
 ### I love learning
 
-Around twelve years old I got a model rocket kit.
+At twelve years old I got a model rocket kit.
 After a few flights, an idea started taking shape:
 Could I angle the rocket into the wind so it would land back where it was launched?
 To make the calculations, I taught myself physics, trigonometry, spreadsheets.
@@ -30,8 +30,8 @@ I love to explore new things.
 ### I love people
 
 I love meeting people, communicating, sharing life together.
-It's all to easy to be anonymous online, where communication is cheap.
-But know that what I care about is you, the person.
+It's all too easy to be anonymous online, where communication is cheap.
+But what I care about is you, the person.
 Let's talk face-to-face over a coffee or a beer sometime.
 
 ### I love my family
